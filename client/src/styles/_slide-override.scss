@@ -1,0 +1,27 @@
+.slide-animation-enter {
+  overflow: hidden;
+  height: 1px;
+  opacity: 0.01;
+}
+
+.slide-animation-enter.slide-animation-enter-active {
+  opacity: 1;
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  -webkit-transition-property: opacity, height;
+  transition-property: opacity, height;
+}
+
+.slide-animation-leave {
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  -webkit-transition-property: opacity, height;
+  transition-property: opacity, height;
+}
+
+.slide-animation-leave.slide-animation-leave-active {
+  height: 1px;
+  opacity: 0.01;
+}

@@ -1,0 +1,14 @@
+@import '_variables.scss';
+
+.login a {
+  color: $b;
+  font-family: $luck;
+  font-size: 20px;
+  text-decoration: none;
+
+  .G_logo {
+    height: 20px;
+    margin: 4px;
+    margin-bottom: -4px;
+  }
+}

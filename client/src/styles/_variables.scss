@@ -1,0 +1,23 @@
+//FONTS
+
+$arch: 'Roboto Slab', serif;
+$luck: 'Roboto Slab', serif;
+
+//COLORS
+$b: #56c0dd;
+$dark: #222222;
+$light: #f6f7ea;
+$red: #d32323;
+
+//MIXINS
+@mixin tshadow($color) {
+  text-shadow: 0 0 3px $color, 1px 1px $color, -1px -1px $color, 1px -1px $color,
+    -1px 1px $color;
+}
+
+@mixin bshadow($color) {
+  -webkit-box-shadow: 0 0 3px $color, 1px 1px $color, -1px -1px $color,
+    1px -1px $color, -1px 1px $color;
+  box-shadow: 0 0 3px $color, 1px 1px $color, -1px -1px $color, 1px -1px $color,
+    -1px 1px $color;
+}

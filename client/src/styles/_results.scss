@@ -1,0 +1,52 @@
+@import '_variables.scss';
+
+.results-wrapper {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: $arch;
+
+  .result {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: rgba(50, 50, 50, 0.25);
+    border: 1px solid #1d3f47;
+    border-radius: 4px;
+    color: #1b3f47;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 26px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 3px;
+    padding: 16px;
+    width: 60vw;
+
+    small {
+      font-size: 16px;
+    }
+
+    .nameBox {
+      float: left;
+      margin-left: 10px;
+      text-align: left;
+    }
+    .numBox {
+      color: #5c6570;
+      float: right;
+      font-style: italic;
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import '_variables.scss';
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: rgb(209, 230, 255);
+  }
+  .title {
+    font-size: 32px;
+  }
+  .scene {
+    font-size: 24px;
+  }
+  input {
+    width: 70vw;
+  }
+  .result {
+    width: 80vw;
+  }
+}
+@media screen and (min-width: 801px) {
+  body {
+    background-color: rgb(209, 230, 255);
+  }
+}
+@media screen and (min-width: 1201px) {
+  body {
+    background-color: rgb(209, 230, 255);
+  }
+}

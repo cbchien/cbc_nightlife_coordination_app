@@ -1,0 +1,65 @@
+{
+  "name": "nightlife_coordination_app",
+  "version": "1.0.0",
+  "description": "'Build a Nightlife Coordination App' is a required project for freeCodeCamp Back End Development Certification.",
+  "main": "./server/server.js",
+  "scripts": {
+    "start": "npm-run-all --parallel client:watch server:watch",
+    "build": "webpack --config webpack.config.js",
+    "client:watch": "webpack --watch",
+    "server": "node ./server/server.js",
+    "server:watch": "nodemon ./server/server.js",
+    "clean": "rm -rf ./client/views; rm -rf server/dist; rm -f server/*bundle*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbchien/nightlife_coordination_app.git"
+  },
+  "keywords": [
+    "React",
+    "MERN",
+    "Node",
+    "Express",
+    "Mongo",
+    "freeCodeCamp",
+    "social"
+  ],
+  "author": "cbchien",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/cbchien/nightlife_coordination_app#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "compression": "^1.7.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "express-session": "^1.15.5",
+    "mongoose": "^4.10.5",
+    "node-yelp-fusion": "^1.0.4",
+    "passport": "^0.3.2",
+    "passport-github2": "^0.1.10",
+    "react": "^15.5.4",
+    "react-countup": "^2.2.0",
+    "react-dom": "^15.5.4",
+    "react-slide-animation": "^15.5.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "compression-webpack-plugin": "^1.0.0",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.28.0",
+    "morgan": "^1.8.2",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.8",
+    "webpack": "^3.1.0",
+    "webpack-node-externals": "^1.6.0"
+  }
+}
